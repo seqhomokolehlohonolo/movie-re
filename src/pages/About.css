@@ -1,0 +1,104 @@
+/* ===================== General Container ===================== */
+.about-container {
+  background-color: #d81313; /* lighter dark gray */
+  color: #f0f0f0;           /* off-white for better readability */
+  font-family: 'Poppins', Arial, sans-serif; 
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* ===================== Hero Banner ===================== */
+.about-hero {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  background: rgba(255, 215, 0, 0.2); /* subtle gold tint */
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.hero-overlay h1 {
+  font-size: 36px;
+  color: #ffd700; /* gold accent */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 3px rgba(1, 189, 126, 0.7);
+}
+
+/* ===================== About Box ===================== */
+.about-box {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  background-color: #0bc20b; /* lighter dark for box */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(2, 231, 33, 0.4);
+}
+
+.about-box p {
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #e0e0e0; /* light gray text for better readability */
+}
+
+/* ===================== Trending Movies Row ===================== */
+.section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffd700; /* gold accent */
+  margin: 20px 0 12px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.trending-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px 20px;
+  scroll-behavior: smooth;
+}
+
+.trending-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 1024px) {
+  .hero-overlay h1 {
+    font-size: 28px;
+  }
+
+  .about-box {
+    padding: 20px;
+  }
+
+  .about-box p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 22px;
+  }
+
+  .about-box {
+    padding: 15px;
+  }
+
+  .about-box p {
+    font-size: 14px;
+  }
+}
+

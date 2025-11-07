@@ -1,0 +1,40 @@
+.hoverable {
+  position: relative;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.hoverable:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.hover-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.85);
+  color: #ffc107;
+  width: 100%;
+  padding: 10px;
+  max-height: 150px;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.hover-description {
+  font-size: 0.8rem;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.movie-card {
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.hover-overlay {
+  opacity: 1;
+}

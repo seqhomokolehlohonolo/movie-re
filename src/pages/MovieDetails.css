@@ -1,0 +1,307 @@
+/* ======= Movie Details Page ======= */
+.movie-details-page {
+  padding: 20px;
+  color: #fff;
+  background-color: #121212;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ======= Back Button ======= */
+.back-btn {
+  background-color: transparent;
+  border: none;
+  color: #ffc107;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* ======= Hero Section ======= */
+.movie-hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-poster {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.movie-hero-info {
+  flex: 1;
+}
+
+.movie-title {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.movie-meta {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.movie-rating {
+  font-size: 1.1rem;
+  color: #e50914;
+  margin-bottom: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-watch, .btn-watchlist {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-watch {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.btn-watch:hover {
+  background-color: #ff1a2e;
+}
+
+.btn-watchlist {
+  background-color: #ffc107;
+  color: #121212;
+}
+
+.btn-watchlist:hover {
+  background-color: #ffd633;
+}
+
+/* ======= Description ======= */
+.movie-description {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* ======= Reviews Section ======= */
+.reviews-section {
+  margin-top: 30px;
+}
+
+.reviews-section h3 {
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+/* ======= Reviews Grid ======= */
+.reviews-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ======= Individual Review Card ======= */
+.review-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e50914;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.review-content {
+  margin-left: 12px;
+  flex-grow: 1;
+}
+
+.review-user {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffc107;
+}
+
+.review-comment {
+  color: #ccc;
+}
+
+/* ======= Review Actions Buttons ======= */
+.review-actions button {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: #121212;
+}
+
+.btn-edit:hover {
+  background-color: #ffd633;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #ff6666;
+}
+
+/* ======= Add/Edit Review Form ======= */
+.review-form-container {
+  margin-top: 20px;
+}
+
+.review-form {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.review-form h5 {
+  color: #ffc107;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.review-form textarea,
+.review-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: border 0.3s;
+}
+
+.review-form textarea:focus,
+.review-form input[type="number"]:focus {
+  border: 1px solid #e50914;
+  outline: none;
+}
+
+/* Submit Button */
+.review-form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e50914;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #ff1a2e;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 768px) {
+  .movie-hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-poster {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+}
+
+
+
+/* ======= Reviews Grid ======= */
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  gap: 20px;
+}
+
+/* Reviews List takes more space, form stays to the side */
+.reviews-list {
+  flex: 2 1 60%; /* grow, shrink, basis */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Review Form Container */
+.review-form-container {
+  flex: 1 1 35%; /* form takes smaller width */
+  min-width: 280px; /* prevent shrinking too small */
+}
+
+/* On smaller screens, stack vertically */
+@media (max-width: 768px) {
+  .reviews-grid {
+    flex-direction: column;
+  }
+
+  .review-form-container {
+    width: 100%;
+  }
+
+  .reviews-list {
+    width: 100%;
+  }
+}

@@ -1,0 +1,117 @@
+/* Full-page background */
+.login-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5f3a0?auto=format&fit=crop&w=1470&q=80'); /* Updated background */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Blur overlay */
+.login-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login card */
+.login-card {
+  background-color: rgba(0,0,0,0.8);
+  padding: 40px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 20px;
+  color: #ffc107;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Input fields */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Google button */
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4285F4;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Divider text */
+.divider {
+  margin: 20px 0 10px;
+  color: #ccc;
+}
+
+/* Error message */
+.error {
+  color: #ff4d4f;
+  margin-bottom: 10px;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid #e50914;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

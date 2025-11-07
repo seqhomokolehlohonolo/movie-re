@@ -1,0 +1,46 @@
+body {
+  background-color: #0d0d0d;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background: #1c1c1c;
+}
+
+.card {
+  background: #1a1a1a;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.rating-stars {
+  color: #f5c518;
+}
+
+.btn-primary {
+  background-color: #f5c518;
+  border: none;
+  color: black;
+}
+
+
+.movie-card {
+  border-radius: 8px;
+  overflow: hidden; /* important to prevent poster overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.movie-card img {
+  width: 100%;      /* make image fit card width */
+  height: 300px;    /* optional: fixed height for uniformity */
+  object-fit: cover; /* crops without stretching */
+  display: block;
+}
