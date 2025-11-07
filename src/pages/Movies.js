@@ -12,7 +12,7 @@ export default function Movies() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await axios.get("https://movie-review-0044.onrender.comvv/api/movies");
+        const response = await axios.get("https://movie-review-0044.onrender.com/api/movies");
         setMovies(response.data);
         setLoading(false);
       } catch (err) {
